@@ -116,7 +116,7 @@ function resetConfirmation() {
     hideResetConfirmation();
   });
 
-  document.querySelector('.js-yes-button').addEventListener('click', () => {
+  document.querySelector('.js-no-button').addEventListener('click', () => {
   hideResetConfirmation();
   });
   
@@ -141,4 +141,5 @@ function updateScoreElement() {
 let scoreCard = JSON.parse(localStorage.getItem('score')) || { Wins: 0, Losses: 0, Ties: 0};
 
 updateScoreElement();
+
 
