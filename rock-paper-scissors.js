@@ -117,7 +117,7 @@ function resetConfirmation() {
   });
 
   document.querySelector('.js-no-button').addEventListener('click', () => {
-  hideResetConfirmation();
+    hideResetConfirmation();
   });
   
 }
@@ -141,5 +141,6 @@ function updateScoreElement() {
 let scoreCard = JSON.parse(localStorage.getItem('score')) || { Wins: 0, Losses: 0, Ties: 0};
 
 updateScoreElement();
+
 
 
